@@ -17,46 +17,63 @@
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #545454; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e96b56; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #005978; /* Fondo principal del sitio */
+  --default-color: #dad2d8; /* Texto principal */
+  --heading-color: #ffffff ; /* Encabezados */
+  --accent-color: #ec9a29; /* Botones principales y elementos de acción */
+  --surface-color: #1b4965; /* Fondo de tarjetas y secciones diferenciadas */
+  --contrast-color: #ffffff; /* Texto sobre fondos oscuros */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Navegación */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e96b56; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e96b56; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-background-color: #143642; /* Fondo del menú */
+  --nav-color: #ffffff; /* Color del texto en navegación */
+  --nav-hover-color: #ec9a29; /* Hover en enlaces del menú */
+  --nav-dropdown-background-color: #0f8b8d; /* Fondo del menú desplegable */
+  --nav-dropdown-color: #ffffff; /* Texto en dropdown */
+  --nav-dropdown-hover-color: #a8201a; /* Hover en elementos del dropdown */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Botones */
+:root {
+  --button-background: #ec9a29; /* Fondo de botones principales */
+  --button-hover: #a8201a; /* Efecto hover */
+  --button-text: #143642; /* Texto en botones */
+}
 
+/* Tarjetas y secciones */
+:root {
+  --card-background: #1b4965; /* Fondo de tarjetas */
+  --card-text: #ffffff; /* Texto en tarjetas */
+  --highlight-color: #a8201a; /* Elementos resaltados */
+}
+
+/* Formularios e Inputs */
+:root {
+  --input-background: #143642; /* Fondo de inputs */
+  --input-border: #0f8b8d; /* Borde de inputs */
+  --input-focus: #ec9a29; /* Borde en foco */
+  --input-text: #ffffff; /* Texto en inputs */
+}
+
+/* Temas claros y oscuros */
 .light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
+  --background-color: #ffffff;
+  --surface-color: #dad2d8;
+  --default-color: #143642;
+  --heading-color: #0f8b8d;
 }
 
 .dark-background {
-  --background-color: #3c3c3c;
+  --background-color: #143642;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #565656;
+  --heading-color: #ec9a29;
+  --surface-color: #0f8b8d;
   --contrast-color: #ffffff;
 }
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
-
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
