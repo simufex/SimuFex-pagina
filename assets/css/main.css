@@ -11,30 +11,28 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-:root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+:root{
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors */
-:root { 
-  --background-color: #005978; /* Fondo principal del sitio */
-  --default-color: #dad2d8; /* Texto principal */
-  --heading-color: #ffffff ; /* Encabezados */
-  --accent-color: #ec9a29; /* Botones principales y elementos de acción */
-  --surface-color: #1b4965; /* Fondo de tarjetas y secciones diferenciadas */
-  --contrast-color: #ffffff; /* Texto sobre fondos oscuros */
-}
+:root{
+  --background-color: #0A1C22;     /* base oscura sutil para realzar el teal */
+  --surface-color:    #0F2F3A;     /* tarjetas/secciones */
+  --heading-color:    #FFFFFF;
+  --default-color:    #D9E4E7;     /* texto principal */
+  --accent-color:     #EC9A29;     /* botones/links */
+  --contrast-color:   #FFFFFF;
 
-/* Navegación */
-:root {
-  --nav-background-color: #143642; /* Fondo del menú */
-  --nav-color: #ffffff; /* Color del texto en navegación */
-  --nav-hover-color: #ec9a29; /* Hover en enlaces del menú */
-  --nav-dropdown-background-color: #0f8b8d; /* Fondo del menú desplegable */
-  --nav-dropdown-color: #ffffff; /* Texto en dropdown */
-  --nav-dropdown-hover-color: #a8201a; /* Hover en elementos del dropdown */
+  /* navegación */
+  --nav-background-color: #143642;
+  --nav-color: #FFFFFF;
+  --nav-hover-color: #EC9A29;
+  --nav-dropdown-background-color: #0F2F3A;
+  --nav-dropdown-color: #FFFFFF;
+  --nav-dropdown-hover-color: #EC9A29;
 }
 
 /* Botones */
@@ -238,6 +236,16 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-left: 8px solid var(--accent-color);
+}
+
+.header .logo img { max-height: 40px; width: auto; }
+.header .logo .wordmark {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: .5px;
+  color: var(--heading-color);
+  line-height: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1182,6 +1190,12 @@ section,
 .services .service-item:hover p {
   color: var(--contrast-color);
 }
+
+/* Centrar tarjetas de servicios */
+.services .service-item { text-align: center; }
+.services .service-item .icon { margin: 0 auto 12px; }
+.services .service-item h3,
+.services .service-item p { margin-left: auto; margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Clients Section

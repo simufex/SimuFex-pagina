@@ -10,13 +10,13 @@
 
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.png" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -72,7 +72,6 @@
             <li><a href="services.html">Servicios</a></li>
             <li><a href="portfolio.html">Proyectos</a></li>
             <li><a href="team.html"class="active">Equipo</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contacto</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -140,22 +139,6 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Benjamín Nicolás Morales Meza</h4>
-                <span>Encargado TI / Cofundador </span>
-                <p>Responsable de la mantención y optimización de los servicios tecnológicos de la empresa. Administra infraestructura, gestiona servicios en la nube y asegura la continuidad operativa de sistemas y redes. Implementa soluciones tecnológicas para mejorar la eficiencia y seguridad de la información.</p>
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>-->
-                  <a href="https://www.linkedin.com/in/benjam%C3%ADn-morales-meza-64155420a/"> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
@@ -204,8 +187,9 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">SimuFex</span>
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-simufex.svg" alt="SimuFex — Ingeniería en Simulación y Diseño" height="36">
+            <span class="wordmark ms-2">SimuFex</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Concepcion, Chile</p>
@@ -218,9 +202,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Nuestro Servicios</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="servicios/cfdServ.html">Soluciones CFD</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="servicios/disenoMserv.html">Diseño Mecanico</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="servicios/pipingServ.html">Estudio de Piping</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#cfd">Simulaciones CFD</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#fem">Simulaciones FEM</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html#dem">Simulaciones DEM</a></li>
           </ul>
         </div>
 
