@@ -84,113 +84,55 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
+      <!-- Slide 1: Mensaje general -->
       <div class="carousel-item active">
         <img src="assets/img/hero-carousel/hero-cfd.jpg" alt="">
         <div class="carousel-container">
-          <h1>Simulaciones de Ingeniería que mueven decisiones</h1>
-          <p>CFD, FEM y DEM para optimizar equipos, procesos y productos. Entregables claros, impacto medible.</p>
-          <a href="contact.html" class="btn-get-started">Agenda una reunión técnica</a>
+          <h2>Simulaciones que impulsan decisiones</h2>
+          <p>CFD, FEM y DEM aplicadas a proyectos de ingeniería con impacto medible.</p>
+          <a href="services.html" class="btn-get-started">Ver Servicios</a>
         </div>
       </div>
-    <div class="carousel-item">
-              <video autoplay loop muted playsinline> 
-                  <source src="assets/img/hero-carousel/vistaiso.mp4" type="video/mp4">
-              </video>
-              <div class="carousel-container">
-                  <h2>Simulaciones CFD</h2>
-                  <p></p>
-                  <a href="portfolio.html" class="btn-get-started">Proyectos</a>
-              </div>
-            </div><!-- End Carousel Item -->
-            
-            <style>
-            /* Asegura que el video ocupa todo el espacio del carrusel */
-            .carousel-item {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden; /* Evita que el contenido adicional se salga */
-            }
-            
-            .carousel-item video {
-                width: 100%; /* Ocupa todo el ancho disponible */
-                height: 100%; /* Ocupa toda la altura */
-                object-fit: cover; /* Llena el espacio del carrusel recortando si es necesario */
-                display: block;
-            }
-            
-            /* Ajuste para dispositivos móviles */
-            @media (max-width: 768px) {
-                .carousel-item video {
-                    width: 100%; /* Asegura que se adapta al ancho en móviles */
-                    height: auto; /* Mantiene la proporción */
-                    object-fit: contain; /* No recorta el video en pantallas pequeñas */
-                }
-            }
-            
-            /* Opcional: Centrar el contenido del carrusel */
-            .carousel-container {
-                position: absolute;
-                z-index: 2;
-                text-align: center;
-                color: #fff;
-            }
-            
-            .carousel-container h2 {
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-            
-            .carousel-container .btn-get-started {
-                padding: 10px 20px;
-                background-color: var(--accent-color, #ec9a29); /* Botón principal */
-                color: var(--contrast-color, #fff);
-                border: none;
-                border-radius: 50px;
-                text-decoration: none;
-                font-size: 1rem;
-                font-weight: bold;
-                transition: background-color 0.3s;
-            }
-            
-            .carousel-container .btn-get-started:hover {
-                background-color: #d57f25; /* Color hover */
-                color: #fff;
-            }
-            </style>
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Diseño Mecanico</h2>
-            <p></p>
-            <a href="portfolio.html" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Estudio de Piping</h2>
-            <p></p>
-            <a href="portfolio.html" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+      <!-- Slide 2: CFD -->
+      <div class="carousel-item">
+        <img src="assets/img/hero-carousel/hero-fem.jpg" alt="">
+        <div class="carousel-container">
+          <h2>CFD – Fluidos & Calor</h2>
+          <p>OpenFOAM/ANSYS para optimizar pérdidas y desempeño térmico.</p>
+          <a href="services.html#cfd" class="btn-get-started">CFD</a>
+        </div>
       </div>
+
+      <!-- Slide 3: FEM -->
+      <div class="carousel-item">
+        <img src="assets/img/hero-carousel/hero-fem.jpg" alt="">
+        <div class="carousel-container">
+          <h2>FEM – Estructuras</h2>
+          <p>Análisis estático, modal y no lineal para rediseños seguros y eficientes.</p>
+          <a href="services.html#fem" class="btn-get-started">FEM</a>
+        </div>
+      </div>
+
+      <!-- Slide 4: DEM -->
+      <div class="carousel-item">
+        <img src="assets/img/hero-carousel/hero-dem.jpg" alt="">
+        <div class="carousel-container">
+          <h2>DEM – Granulares</h2>
+          <p>Predicción de flujos de sólidos, atascos y desgaste en equipos.</p>
+          <a href="services.html#dem" class="btn-get-started">DEM</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
 
     <section id="services" class="services section">
 
@@ -228,27 +170,71 @@
 
     </section>
 
-    <section class="section" id="metodologia">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-12" data-aos="fade-up">
-            <h2>Cómo trabajamos</h2>
-          </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
-            <h4>1. Descubrimiento</h4><p>Definición de objetivos, KPIs y datos disponibles.</p>
-          </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-            <h4>2. Modelado</h4><p>Modelo físico-numérico, malla/partículas y condiciones de borde.</p>
-          </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-            <h4>3. Simulación</h4><p>Casos base y variantes. Escalamiento y sensiblidades.</p>
-          </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <h4>4. Entregables</h4><p>Resultados trazables, recomendaciones y plan de mejora.</p>
-          </div>
-        </div>
+<section id="metodologia" class="section workflow">
+  <div class="container">
+    <h2 class="mb-4 text-center">Cómo trabajamos</h2>
+
+    <div class="workflow-row d-none d-md-flex">
+      <!-- Paso 1 -->
+      <div class="workflow-step">
+        <div class="step-badge">1</div>
+        <h4>Descubrimiento</h4>
+        <p>Objetivos, KPIs, datos y supuestos del sistema.</p>
       </div>
-    </section>
+      <div class="workflow-arrow" aria-hidden="true"></div>
+
+      <!-- Paso 2 -->
+      <div class="workflow-step">
+        <div class="step-badge">2</div>
+        <h4>Modelado</h4>
+        <p>Físicas, malla/partículas, condiciones y casos.</p>
+      </div>
+      <div class="workflow-arrow" aria-hidden="true"></div>
+
+      <!-- Paso 3 -->
+      <div class="workflow-step">
+        <div class="step-badge">3</div>
+        <h4>Simulación</h4>
+        <p>Corridas base/variantes, sensibilidad y validación.</p>
+      </div>
+      <div class="workflow-arrow" aria-hidden="true"></div>
+
+      <!-- Paso 4 -->
+      <div class="workflow-step">
+        <div class="step-badge">4</div>
+        <h4>Entregables</h4>
+        <p>Informe, KPIs logrados y plan de mejora.</p>
+      </div>
+    </div>
+
+    <!-- Versión móvil (vertical) -->
+    <div class="workflow-col d-md-none">
+      <div class="workflow-step">
+        <div class="step-badge">1</div>
+        <h4>Descubrimiento</h4>
+        <p>Objetivos, KPIs, datos y supuestos del sistema.</p>
+      </div>
+      <div class="workflow-arrow-vertical" aria-hidden="true"></div>
+      <div class="workflow-step">
+        <div class="step-badge">2</div>
+        <h4>Modelado</h4>
+        <p>Físicas, malla/partículas, condiciones y casos.</p>
+      </div>
+      <div class="workflow-arrow-vertical" aria-hidden="true"></div>
+      <div class="workflow-step">
+        <div class="step-badge">3</div>
+        <h4>Simulación</h4>
+        <p>Corridas base/variantes, sensibilidad y validación.</p>
+      </div>
+      <div class="workflow-arrow-vertical" aria-hidden="true"></div>
+      <div class="workflow-step">
+        <div class="step-badge">4</div>
+        <h4>Entregables</h4>
+        <p>Informe, KPIs logrados y plan de mejora.</p>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
