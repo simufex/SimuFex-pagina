@@ -2662,3 +2662,80 @@ section,
   width: 100%; height: 100%;
   border: 0;
 }
+
+/* ==== Team Cards SimuFex ==== */
+.team .page-title p{ color: var(--default-color); opacity:.9; }
+
+.team-card{
+  background: var(--surface-color);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  display: flex; flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.team-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.28);
+}
+
+.team-photo{
+  aspect-ratio: 16/10;
+  background: #0a1c22;
+  overflow: hidden;
+}
+.team-photo img{
+  width:100%; height:100%; object-fit:cover;
+  display:block;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.team-body{ padding:16px 16px 0; }
+.team-name{
+  font-family: var(--heading-font);
+  font-size: 1.05rem; font-weight: 700;
+  margin: 4px 0 2px;
+}
+.team-role{
+  font-size: .9rem; opacity:.85; margin: 0 0 8px;
+  color: var(--default-color);
+}
+.team-bio{
+  font-size: .92rem; line-height: 1.4; margin: 0 0 12px;
+  color: var(--default-color);
+}
+
+.team-skills{
+  display:flex; flex-wrap:wrap; gap:8px;
+  list-style:none; padding:0; margin:0 0 8px;
+}
+.team-skills li{
+  font-size:.78rem; font-weight:700;
+  padding:6px 10px; border-radius:999px;
+  background: rgba(236,154,41,.12); /* acento suave */
+  color: #ffd499; /* legible sobre dark */
+  border: 1px solid rgba(236,154,41,.25);
+  letter-spacing:.2px;
+}
+
+.team-footer{
+  display:flex; justify-content:flex-end; align-items:center;
+  padding: 10px 14px 14px;
+  margin-top:auto;
+}
+.team-footer .social-link{
+  display:inline-flex; align-items:center; gap:8px;
+  font-weight:700; text-decoration:none;
+  color: var(--default-color);
+  padding:8px 12px; border-radius:999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  transition: background .2s ease, border-color .2s ease;
+}
+.team-footer .social-link:hover{
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.18);
+}
+.team-footer .bi{ font-size: 1rem; }
